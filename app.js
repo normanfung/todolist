@@ -4,7 +4,11 @@ const path = require("path");
 const date = require("./day.js");
 const _ = require("lodash");
 let day = date();
-let port = process.env.port || 3000;
+
+let port = process.env.PORT;
+if (port == null || port == "") {
+  port = 3000;
+}
 
 let app = express();
 app.set("view engine", "ejs");
@@ -119,5 +123,5 @@ app.post("/delete", (req, res) => {
 });
 
 app.listen(port, () => {
-  console.log("server is up and running at port: " + port);
+  console.log("server has started successfully");
 });
