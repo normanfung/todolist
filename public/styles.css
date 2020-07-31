@@ -1,0 +1,146 @@
+html {
+  background-color: #e4e9fd;
+  background: linear-gradient(to right, #fffbd5, #b20a2c);
+  min-height: 100vh;
+  font-family: "Poppins", sans-serif;
+}
+
+h1 {
+  color: #fff;
+  padding: 10px;
+}
+
+.box {
+  max-width: 20%;
+  margin: 50px auto;
+
+  border-radius: 5px;
+  box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3);
+}
+
+#box {
+  transition: all ease-out 0.3s;
+  overflow: scroll;
+  height: 40vh;
+  background-color: white;
+}
+
+#heading {
+  text-align: center;
+}
+
+#Work,
+#Home,
+#Daily {
+  flex: 1;
+  color: white;
+}
+
+#Home:hover a,
+#Daily:hover a,
+#Work:hover a {
+  color: rgb(209, 205, 205);
+  transition: all ease-out 0.3s;
+}
+
+.item {
+  min-height: 70px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #5f5b5b;
+}
+
+.item:last-child {
+  border-bottom: 1px solid #5f5b5b;
+}
+
+input[type="checkbox"] {
+  margin: 20px;
+}
+
+p {
+  margin: 0;
+  padding: 20px;
+  font-size: 20px;
+  font-weight: 200;
+  color: #00204a;
+}
+
+form {
+  text-align: center;
+  margin-left: 20px;
+}
+
+button {
+  min-height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  border-color: transparent;
+  background-color: #6b6964;
+  color: #fff;
+  font-size: 30px;
+  padding-bottom: 6px;
+  border-width: 0;
+  outline: none;
+  margin-right: 5px;
+}
+
+button:hover {
+  background-color: #aaa9a6;
+}
+
+input[type="text"] {
+  text-align: center;
+  height: 60px;
+  top: 10px;
+  border: none;
+  background: transparent;
+  font-size: 20px;
+  font-weight: 200;
+  width: 313px;
+  color: white;
+}
+
+input[type="text"]:focus {
+  outline: none;
+
+  box-shadow: inset 0 -3px 0 0 #4e4263;
+}
+
+::placeholder {
+  color: rgb(255, 255, 255);
+  opacity: 1;
+}
+
+footer {
+  color: white;
+  color: rgba(0, 0, 0, 0.5);
+  text-align: center;
+}
+
+.box2 {
+  max-width: 20%;
+  margin: 50px auto;
+  border-radius: 5px;
+  box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3);
+}
+
+.box2 ul {
+  display: flex;
+  text-decoration: none;
+  list-style-type: none;
+  justify-content: space-around;
+  align-items: center;
+  transform: translateX(-20px);
+  font-size: 2rem;
+  color: #ffffff;
+  text-align: center;
+}
+
+li a {
+  text-decoration: none;
+}
+
+a:visited {
+  color: #ffffff;
+}
