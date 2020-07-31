@@ -109,7 +109,6 @@ app.post("/", (req, res) => {
 
 app.post("/delete", (req, res) => {
   const delItem = req.body.checkbox;
-  console.log(delItem);
   if (req.body.list === "Home") {
     Item.deleteOne({ _id: delItem }, (e) => {});
     res.redirect("/");

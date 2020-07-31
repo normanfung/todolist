@@ -13,11 +13,11 @@
         </ul>
     </div>
     
-    <div class="box" id="box">
+    <div  id="box">
 
         <% newItems.forEach((item)=>{ %>
-            <form action="/delete" method="post">
-                <div class="item">
+            <form id="form" action="/delete" method="post">
+                <div class="item" id="item">
                     <input type="checkbox" name="checkbox" value="<%=item._id%>" onChange="this.form.submit()">
                     <input type="hidden" name="list" value=<%=listTitle%>></input>
                     <p><%=item.name%></p>
