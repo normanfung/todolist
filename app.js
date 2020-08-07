@@ -19,7 +19,7 @@ const mongoose = require("mongoose");
 const e = require("express");
 
 mongoose.connect(
-  "mongodb+srv://admin-nfzj:gdsop321@cluster0.8jteo.mongodb.net/todoListDB",
+  "mongodb+srv://admin-nfzj:@cluster0.8jteo.mongodb.net/todoListDB",
   {
     useNewUrlParser: true,
     useUnifiedTopology: true,
